@@ -97,7 +97,7 @@ app.get('/detailState/*', async (req, res) => {
 });
 // Router handler for processing api endpoints
 app.all('/api/*', (req, res) => {
-  let base = 'https://app-hrsei-api.herokuapp.com/api/fec2/hr-rpp';
+  let base = 'http://localhost:2500';
   let method = req.method;
   let url = req.url.substring(4);
   let query = req.query;
